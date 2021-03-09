@@ -1,4 +1,4 @@
-import { name, version } from "../goosemodModule.json";
+/*import { name, version } from "../goosemodModule.json";
 
 let settings = {
   null: true,
@@ -44,7 +44,7 @@ function updateSettings(value) {
   for (const setting in settings) {
     updateSetting(setting, value);
   }
-}
+}*/
 
 let style;
 
@@ -55,7 +55,7 @@ export default {
       style.textContent = `@import "https://raw.githack.com/TheRealGWJosh/CustomUserTags/main/main/main.css"`;
       document.head.appendChild(style);
 
-      updateSettings();
+      /*updateSettings();
 
       goosemodScope.settings.createItem(name, [
         `(v${version})`,
@@ -71,19 +71,19 @@ export default {
           onToggle: (value) => updateSetting("null", value),
           isToggled: () => settings.null,
         },
-      ]);
+      ]);*/
     },
 
-    getSettings: () => [settings],
+    /*getSettings: () => [settings],
     loadSettings: ([_settings]) => {
       settings = _settings;
 
       updateSettings();
-    },
+    },*/
 
     onRemove: async () => {
-      goosemodScope.settings.removeItem(name);
-      updateSettings(false);
+      /*goosemodScope.settings.removeItem(name);
+      updateSettings(false);*/
       style.remove();
     },
   },
