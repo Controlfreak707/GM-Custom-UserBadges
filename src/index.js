@@ -2,7 +2,7 @@
 
 import showToast from "@goosemod/toast";
 import { debug } from "@goosemod/logger";
-import settingsPage from "@goosemod/settings";
+import * as settingsPage from "@goosemod/settings";
 
 let settings = {
   null: true,
